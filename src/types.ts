@@ -1,3 +1,27 @@
+import { TooltipYAlignment } from "chart.js";
+
+export interface Fields {
+  dimensions: string[];
+  measures: string[];
+  pivots: string[];
+}
+
+export interface TooltipRow {
+  hasPreviousPeriod: boolean;
+  measureValue: string;
+  periodComparisonValue: number;
+  pivotColor: string;
+  pivotText: string;
+}
+
+export interface TooltipData {
+  dimensionLabel: string;
+  left: string;
+  rows: TooltipRow[];
+  top: string;
+  yAlign: TooltipYAlignment;
+}
+
 // API Globals
 // pulled from https://github.com/looker/custom_visualizations_v2/blob/master/src/examples/types/types.ts
 export interface Looker {

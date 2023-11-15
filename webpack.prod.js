@@ -5,7 +5,7 @@ const path = require("path");
 module.exports = merge(common, {
   mode: "production",
   output: {
-    filename: "bar-line-bundle.js",
+    filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
 });
